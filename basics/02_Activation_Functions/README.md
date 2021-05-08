@@ -1,8 +1,20 @@
-## TORCH.AUTOGRAD
+## Activation functions.
 
-``torch.autograd`` is PyTorch’s automatic differentiation engine that powers neural network training.
-> [Docs](https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html)
+Activation functions apply a non-linear transformation and decide weather a neron must activated or no. The reason why we use activation function is because without activation functions our model will be basically satcked as a linear regression model.
+The introduction on non-liniearity in our model helps it to learn better and perfom complex task.
 
-**Forward Propagation**: In forward prop, the NN makes its best guess about the correct output. It runs the input data through each of its functions to make this guess.
+### Moset Popular Activation functions
 
-**Backward Propagation**: In backprop, the NN adjusts its parameters proportionate to the error in its guess. It does this by traversing backwards from the output, collecting the derivatives of the error with respect to the parameters of the functions (gradients), and optimizing the parameters using gradient descent. 
+1. **Step function**
+    > Not used most
+ 
+2. **Sigmoid**
+    > For **binary Classification** if the output is either **true** of **false**
+3. **TanH**
+    > For **Hiden layers**
+4. **ReLU**
+     > For **Hiden layers**
+5. **Leaky ReLU**
+    > Improved version of `RelU` for vanishng gradient problems
+6. **Softmax**
+    > For **Multiclass Classification Problems**
